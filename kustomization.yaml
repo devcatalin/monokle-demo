@@ -7,4 +7,3 @@ commonLabels:
 resources:
   - nginx-demo-deployment.yaml
   - nginx-demo-service.yaml
-  - nginx-demo-config.yaml
