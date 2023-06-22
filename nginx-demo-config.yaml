@@ -4,4 +4,3 @@ metadata:
   name: nginx-demo-config
 data:
   NGINX_PORT: "80"
-  test: test
