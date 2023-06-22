@@ -14,9 +14,16 @@ spec:
     spec:
       containers:
         - name: nginx-demo-container
-          image: nginx:latest
+          image: nginx:1.25.1
           ports:
             - containerPort: 80
           envFrom:
             - configMapRef:
                 name: nginx-demo-config
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
